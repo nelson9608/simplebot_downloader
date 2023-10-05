@@ -22,7 +22,7 @@ def deltabot_init(bot: DeltaBot) -> None:
     get_setting(bot, "max_size", DEF_MAX_SIZE)
     get_setting(bot, "part_size", DEF_PART_SIZE)
     get_setting(bot, "delay", DEF_DELAY)
-    mode = get_setting(bot, "mode", "filter")
+    mode = get_setting(bot, "mode", "command")
 
     if mode == "filter":
         bot.filters.register(download_filter)
